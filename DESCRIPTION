@@ -1,0 +1,20 @@
+Package: WrightFisherSimulation
+Type: Package
+Title: Wright-Fisher Simulation
+Version: 0.0.0.9000
+Authors@R: person(given = "Joh.", family = "Schnee.", email = "private@mail.com",
+                  role = c("cre", "aut"))
+Description: The package simulates the behavior of population genetics according to the 
+    Wright-Fisher Model. It assumes a diploid population with two possible alleles.
+    Using that simulation, grafics can be generated. They show the evolution of 
+    different realizations from a given starting point. One focuses on the number of
+    each alleles, another one on the variance between the realizations, and the third one
+    the heterozygosity.
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2,
+    magrittr,
+    dplyr,
+    tibble
+RoxygenNote: 7.1.1
