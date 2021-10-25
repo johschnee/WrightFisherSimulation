@@ -6,5 +6,15 @@ A R-package that simulates the behavior of population genetics according to the 
 You can install the package in R via
 ```devtools::install_git("https://github.com/johschnee/WrightFisherSimulation.git")```.
 
+## Example of usage
+```
+library(WrightFisherSimulation)
+init(N = 50, X0 = 50, realizations = 50, gens = 400)
+p <- simulation()
+graphic_individuals(p)
+graphic_variance(p)
+graphic_heterozygosity(p)
+```
+
 ## Reference
 V. Hösel, C. Kuttler, J. Müller. _Mathematical Population Genetics and Evolution of Bacterial Cooperation_, Word Scientific Press, Singapore, 2020, pp. 26-36.
